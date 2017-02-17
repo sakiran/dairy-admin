@@ -2,7 +2,7 @@ var apply = {
     basic: function() {
         var a = $("#order-form").serializeArray();
         $.ajax({
-            url: "../server/orderform.php",
+            url: "/dairy/server/index.php",
             type: "POST",
             data: a,
             dataType: "html",
@@ -24,3 +24,9 @@ var apply = {
         });
     }
 };
+
+$(document).on('click', '#submitbutton', function() {
+
+    apply.basic();
+
+});
