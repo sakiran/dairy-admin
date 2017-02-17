@@ -21,6 +21,7 @@ $(document)
                 var json = jQuery.parseJSON(a);
                 var serialnumber;
                 serialnumber = 0;
+                $("#tabledisplay").empty();
 
 
 
