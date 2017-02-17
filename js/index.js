@@ -3,7 +3,7 @@ var apply = {
         var a = $("#order-form").serializeArray();
         $.ajax({
             url: "/dairy/server/index.php",
-            type: "POST",
+            type: "GET",
             data: a,
             dataType: "html",
             beforeSend: function() {},
